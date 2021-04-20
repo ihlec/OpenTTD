@@ -2010,7 +2010,7 @@ struct MainToolbarWindow : Window {
 		_last_started_action = CBF_NONE;
 		CLRBITS(this->flags, WF_WHITE_BORDER);
 		this->SetWidgetDisabledState(WID_TN_PAUSE, _networking && !_network_server); // if not server, disable pause button
-		// this->SetWidgetDisabledState(WID_TN_FAST_FORWARD, _networking); // if networking, disable fast-forward button
+		this->SetWidgetDisabledState(WID_TN_FAST_FORWARD, _networking && !_network_server); // if networking, disable fast-forward button
 		PositionMainToolbar(this);
 		DoZoomInOutWindow(ZOOM_NONE, this);
 
