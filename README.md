@@ -1,4 +1,4 @@
-# OpenTTD
+# OpenTTD (but allows fast forward in multiplayer sessions)
 
 ## Table of contents
 
